@@ -16,7 +16,7 @@ class UserSevice implements IUserService {
   }
 
   @override
-  Future<User> login(String email, String password) {
-    _repository.login(email, password);
+  Future<User> login(String email, String password) async {
+    return await _repository.login(email, password);
   }
 }
