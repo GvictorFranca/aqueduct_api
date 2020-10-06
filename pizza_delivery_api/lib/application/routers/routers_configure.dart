@@ -1,5 +1,6 @@
 import 'package:pizza_delivery_api/application/routers/i_router_configure.dart';
 import 'package:pizza_delivery_api/modules/menu/menu_router.dart';
+import 'package:pizza_delivery_api/modules/orders/orders_routers.dart';
 import 'package:pizza_delivery_api/modules/users/users_routers.dart';
 
 import '../../pizza_delivery_api.dart';
@@ -9,6 +10,7 @@ class RoutersConfigure {
   final List<IRouterConfigure> routers = [
     UsersRouters(),
     MenuRouter(),
+    OrdersRouters()
   ];
 
   RoutersConfigure(this._router);
